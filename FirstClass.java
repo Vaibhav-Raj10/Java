@@ -21,7 +21,6 @@ class Person{
 	// Error watch:  cannot find symbol 'p2' in
         //      	 System.out.println(p2.name + " is " + p2.age + " years old.\n");
 	// using this keyword to point to current object removes above error
-	// but this line does not get printed. Why???
 	void printData(){
 		System.out.print("Inside printData\n");
 		System.out.println(this.name + " is " + this.age + " years old.\n");
@@ -29,7 +28,7 @@ class Person{
 
 	// attempt to create class object inside of class
 	// we can do this
-	void myownObject(){
+	static void myownObject(){
 		Person p2 = new Person();
 		p2.name = "Brad";
 		p2.age = 15;
@@ -58,6 +57,8 @@ public class FirstClass {
 
 		// this will print the same line again 
 		p1.printData();
+
+		Person.myownObject();
 	}
 }
 
