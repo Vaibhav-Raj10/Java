@@ -68,7 +68,7 @@ Salary :20000
 */
 
 /*
-Takeaway Points
+Takeaway Points:- 
 1. 'main' is declared static because it has to  be called at compile time before any object is created at run time.
 2. declaring return type as int and returning a float or double will cause error due to lossy conversion
 3. declaring return type as double and returning float or in will not cause any error
