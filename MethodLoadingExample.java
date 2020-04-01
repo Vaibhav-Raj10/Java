@@ -28,7 +28,7 @@ class Person{
 
 	// p1.printDetails(p2, 1000)
 	boolean printDetails(Person p, int salary){
-		p.salary = salary // this.salary
+		p.salary = salary; // this.salary
 		System.out.println("Name: " + name + "\nAge: " + age + "\nHeight: " + height + "\nSalary :" + p.salary);
 		if(p.age > 18){
 			return true;
@@ -45,7 +45,7 @@ class MethodLoadingExample {
 		p2 = new Person("Claire", 17, 5.4);
 
 		p1.printDetails(p1); // Name: Peter Age: 19 Height: 5.60
-		int num = p1.printDetails(p2, true); // Name: Claire Age: 17 Height: 5.40
+		float num = p1.printDetails(p2, true); // Name: Claire Age: 17 Height: 5.40
 
 		boolean val = p1.printDetails(p2, 5500); // Name: Claire Age: 17 Height: 5.40 Salary: 0
 
